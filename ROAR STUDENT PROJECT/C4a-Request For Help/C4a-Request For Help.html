@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WSU ROAR</title>
+    <link href="../style/css.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style type="text/css">
+  a{color:black;}
+  </style>
+
+
+<body>
+
+<header class="header">
+  <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+  Back
+</header>
+<div class="container" style="padding-top: 20%; float: break;">
+    <h1 style="text-align: center;">Request For Help</h1>
+
+<div class="container">
+   <h4 style="text-align: center;"><font color="#d9534f"><u>For Emergencies Call 911</u></font></h4>
+
+ </div> 
+</div>
+<div class="container" style="width: 70%;"  id="c4afont">
+  <h5 style="text-align: center;">What do you need help with?</h5>
+  <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1" style="font-weight: normal;">Assignment/Study</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2" style="font-weight: normal">Walking to/form class</label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2" style="font-weight: normal">Other</label>
+  <input id="inputEmail3" placeholder="Other" style="width: 100px; float: right; margin-right: 55px;">
+</div>
+</div>
+
+</div>
+
+
+
+
+
+ <div class="container" style="width: 70%; margin-top: 10%;">
+    <form action="" class="form-horizontal"  role="form">
+        <fieldset>
+            
+            <div class="form-group">
+                <label for="dtp_input1" class="col-md-2 control-label" style="font-weight: normal; text-align: center;">Select Date and Time</label>
+                <div class="input-group date form_datetime col-md-5" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1" style="margin-top: 5%;">
+                    <input class="form-control" size="16" type="text" value="" readonly>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                </div>
+                <input type="hidden" id="dtp_input1" value="" /><br/>
+            </div>
+            
+
+        
+        </fieldset>
+    </form>
+</div>
+
+
+  <footer class="footer">
+  <!--Logout-->
+  <div class="mlrcenter tacenter mt5">
+  <button type="button" class="btn btn-secondary bs1" style="padding: 0 auto; margin-top: 5%; border: solid black 1px;width: 150px;">Cancel</button>
+    <button type="button" class="btn btn-danger bs1" style="padding: 0 auto; margin-top: 5%; border: solid black 1px;width: 150px;">Review Request</button>
+   </div>
+</footer>
+
+ 
+
+<script type="text/javascript" src="./jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+<script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+        //language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
+    });
+    $('.form_date').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+    $('.form_time').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 1,
+        minView: 0,
+        maxView: 1,
+        forceParse: 0
+    });
+</script>
+
+</body>
+</html>

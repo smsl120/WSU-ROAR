@@ -1,118 +1,277 @@
 @charset "utf-8";
-*body{ background: url(images/bg-logo.png) !important;background-color:#fef1f4 !important;}
-html, body{ width: 100%; height: 100%;font:12px/1.25 "Helvetica Neue","Microsoft Yahei",sans-serif;background: #FFF; }
-html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p ,dl, dt, dd{ margin: 0; padding: 0;border: 0; }
-ul, ol, li { list-style: none; }
-input, select, textarea, button{ font: 12px/1.25 "微软雅黑",Arial, Helvetica, sans-serif;border-radius: 0; }
-*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
-textarea{ outline:none; resize:none;}
-a{color:black}
-a { text-decoration: none;}
+body {
+  background: url(../images/bg-logo1.jpeg) !important;
+  background-color: #fef1f4 !important;
+  background-repeat: no-repeat !important;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font: 12px/1.25 'Helvetica Neue', 'Microsoft Yahei', sans-serif;
+}
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+input,
+select,
+textarea,
+button {
+  font: 12px/1.25 '微软雅黑', Arial, Helvetica, sans-serif;
+  border-radius: 0;
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+textarea {
+  outline: none;
+  resize: none;
+}
+a {
+  color: black;
+}
+a {
+  text-decoration: none;
+}
 
-a:focus{-webkit-tap-highlight-color: rgba(255,0,0,0);border:none;outline:none;}
-img{ vertical-align:middle; border:none;}
-em { font-style: normal;}
-table{border-spacing:0;border-collapse:collapse; list-style: circle}
-h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400;}
-input[type="submit"],input[type="reset"],input[type="button"],input[type="text"],select,button,a{-webkit-tap-highlight-color: rgba(255, 0, 0, 0);-webkit-appearance: none;}
-input:focus{-webkit-tap-highlight-color: rgba(255,0,0,0);border:none;outline:none;}
-.clearfix:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; }
-.clearfix{zoom:1;}
-.titlebg{background-image: linear-gradient( #563d7c 10%,    #6f5499  100%)}
+a:focus {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  border: none;
+  outline: none;
+}
+img {
+  vertical-align: middle;
+  border: none;
+}
+em {
+  font-style: normal;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  list-style: circle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 400;
+}
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+input[type='text'],
+select,
+button,
+a {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  -webkit-appearance: none;
+}
+input:focus {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  border: none;
+  outline: none;
+}
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.titlebg {
+  background-image: linear-gradient(#563d7c 10%, #6f5499 100%);
+}
 .middle {
-    float: none;
-    display: inline-block;
-    vertical-align: middle;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
 }
-.pdcenter{padding:5% 3%}
-.red{color:#d44950;}
-.cw{color: white;}
-.clean{clean:both;}
-.fl{display: inline;}
-.fr{float:right;}
-.mt0{margin:0 0 0;}
-.mr3{margin-right: 3%;}
-.m0010{margin: 0 0 10px;}
-.mt10{margin-top: 10px;}
-.ml3{margin-left:3%;}
-.ml{margin: left;}
-.mr{margin: right;}
-.mlrcenter {margin: 0 auto;}
-.tacenter {text-align: center}
-<!--OT1a--->
-.mt5{margin-top:33%;}
-.bs1{border: solid 1px;}
+.pdcenter {
+  padding: 5% 3%;
+}
+.red {
+  color: #d44950;
+}
+.cw {
+  color: white;
+}
+.clean {
+  clean: both;
+}
+.fl {
+  display: inline;
+}
+.fr {
+  float: right;
+}
+.mt0 {
+  margin: 0 0 0;
+}
+.mr3 {
+  margin-right: 3%;
+}
+.m0010 {
+  margin: 0 0 10px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.ml3 {
+  margin-left: 3%;
+}
+.ml {
+  margin: left;
+}
+.mr {
+  margin: right;
+}
+.mlrcenter {
+  margin: 0 auto;
+}
+.tacenter {
+  text-align: center;
+}
+<!--OT1a--- > .mt5 {
+  margin-top: 33%;
+}
+.bs1 {
+  border: solid 1px;
+}
 .footer {
-    margin: 0 auto;
-    width: 100%;
-    height: 150px;
-    left: 0;
-    position: absolute;
-    bottom: 0px;
-    text-align:center;
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
 }
-<!--OT3-->
-body,header.header{
-    width: 100%;
-    height: 30px;
-    border-top: solid 2px;
-    border-bottom: solid 2px;
-    position: absolute;
-    left: 0;
-    top: 5%;
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-top: 3px;
-
-}
-
-<!--OT4a-->
-body div .btm-size{
-    width: 50px;
+<!--OT3-- > body,
+header.header {
+  width: 100%;
+  height: 30px;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  position: absolute;
+  left: 0;
+  top: 68px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-top: 3px;
 }
 
-body h1 .text{ border: solid red 3px;}
-
-
-
-<!--OT5-->
-.main_cont {
-    width: 90%;
-    height: 60%;
-    margin: 0 auto;
-    border: solid black 1px;
-    text-align: center;
+<!--OT4a-- > body div .btm-size {
+  width: 50px;
 }
 
-<!--C4a-->
-#c4afont div label{
-    font-size: 100px;
-    color: red;
+body h1 .text {
+  border: solid red 3px;
+}
+
+<!--OT5-- > .main_cont {
+  width: 90%;
+  height: 60%;
+  margin: 0 auto;
+  border: solid black 1px;
+  text-align: center;
+}
+
+<!--C4a-- > #c4afont div label {
+  font-size: 100px;
+  color: red;
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
-    html, body{ font-size: 12px; }
-    input, select, textarea, button{ font-size: 12px;}
+  html,
+  body {
+    font-size: 12px;
+  }
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 12px;
+  }
 }
-@media (min-width: 375px) and (max-width: 479px){
-    html, body{ font-size: 14px; }
-    input, select, textarea, button{ font-size: 14px;}
+@media (min-width: 375px) and (max-width: 479px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 14px;
+  }
 }
-@media (min-width: 480px) and (max-width: 539px){
-    html, body{ font-size: 18px; }
-    input, select, textarea, button{ font-size: 18px;}
+@media (min-width: 480px) and (max-width: 539px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 18px;
+  }
 }
-@media (min-width: 540px) and (max-width: 599px){
-    html, body{ font-size: 20px; }
-    input, select, textarea, button{ font-size: 20px;}
+@media (min-width: 540px) and (max-width: 599px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 20px;
+  }
 }
 @media (min-width: 600px) {
-    html, body{ font-size: 22px; }
-    input, select, textarea, button{ font-size: 22px;}
-} 
-
-<!--login page-->
-.loginbtn {
-    width: 400px;
+  html,
+  body {
+    font-size: 22px;
+  }
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 22px;
+  }
 }
 
+<!--login page-- > .loginbtn {
+  width: 400px;
+}

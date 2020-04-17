@@ -18,34 +18,48 @@
     }
   </style>
   <body>
-    <div class="container" style="padding-top: 40%;">
+    <header class="header">
+      <a href="ActiveEvents.html"
+        ><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+        Back</a
+      >
+    </header>
+
+    <div class="container" style="padding-top: 25%;">
       <div class="text-center">
-        <h2 class="font-weight-bold alert alert-success">
-          Event Created Successfully
-        </h2>
+        <h2 class="font-weight-bold">Event Info</h2>
       </div>
+
       <br />
+      <p class="lead"><strong>Name:</strong> Meet Up</p>
+      <p class="lead"><strong>Location:</strong> Cleveland Hall</p>
+      <p class="lead"><strong>Date:</strong> April 04, 2020</p>
+      <p class="lead"><strong>Time:</strong> 02:30 PM</p>
+      <p class="lead">
+        <strong>Description:</strong> Discuss your progress with your friends
+        and peer allies.
+      </p>
+      <p class="lead alert alert-success">
+        <strong>20</strong> people are currently signed up for this events.
+      </p>
+
       <div class="text-center">
         <!-- <button type="button" class="btn btn-danger btn-lg btn-block"><a href="SignUpComplete.html">Next</a></button> -->
-        <a href="EventCreate.html" class="btn btn-success btn-lg"
-          ><span class="glyphicon glyphicon-save" aria-hidden="true"></span>
-          Create Another Event</a
-        >
-
-        <br />
-        <br />
-        <br />
-        <a href="AdminHome.html" class="btn btn-danger btn-lg"
+        <a href="ActiveEvents.html" class="btn btn-danger btn-lg"
           ><span
             class="glyphicon glyphicon-menu-left"
             aria-hidden="true"
           ></span>
-          Home</a
+          Back</a
+        >
+        <a href="EventSignUpSuccess.html" class="btn btn-success btn-lg"
+          ><span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span>
+          Sign Up for Event</a
         >
       </div>
     </div>
 
-    <footer class="footer" style="height: 300px;"></footer>
+    <footer class="footer"></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>

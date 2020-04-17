@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WSU ROAR</title>
+    <link href="style/css.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style type="text/css">
+    a {
+      color: black;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <a href="StudentHome.html"
+        ><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+        Back</a
+      >
+    </header>
+    <div class="container" style="padding-top: 25%; float: break;">
+      <div class="text-center">
+        <h2 class="font-weight-bold">Request for Help</h2>
+      </div>
+      <div class="alert alert-danger">For Emergencies, please call 911</div>
+
+      <label for="inputHelp">What do you need help with?</label>
+      <div class="form-check form-check-inline">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="inputHelp"
+          id="inputHelp1"
+          value="option1"
+        />
+        <label class="form-check-label" for="inputHelp1"
+          >Assignment/Study</label
+        >
+      </div>
+      <div class="form-check form-check-inline">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="inputHelp"
+          id="inputHelp2"
+          value="option2"
+        />
+        <label class="form-check-label" for="inputHelp2"
+          >Walking to/from class</label
+        >
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="inputHelp"
+          id="inputHelp3"
+          value="option2"
+        />
+        <label class="form-check-label" for="inputHelp3">Other</label>
+        <input id="inputHelp3_" placeholder="Other" />
+      </div>
+
+      <br />
+      <label for="">When do you need help?</label>
+      <div class="form-group">
+        <label for="inputEventDate">Date (mm/dd/yyyy)</label>
+        <input type="date" class="form-control" id="inputEventDate" />
+      </div>
+
+      <div class="form-group">
+        <label for="inputEventTime">Time (hh:mm AM/PM)</label>
+        <input type="time" class="form-control" id="inputEventTime" />
+      </div>
+      <br />
+      <div class="text-center">
+        <!-- <button type="button" class="btn btn-danger btn-lg btn-block"><a href="SignUpComplete.html">Next</a></button> -->
+        <a href="StudentHome.html" class="btn btn-danger btn-lg"
+          ><span
+            class="glyphicon glyphicon-menu-left"
+            aria-hidden="true"
+          ></span>
+          Cancel</a
+        >
+        <a href="RequestForHelpReview.html" class="btn btn-success btn-lg"
+          ><span
+            class="glyphicon glyphicon-info-sign"
+            aria-hidden="true"
+          ></span>
+          Review Request</a
+        >
+      </div>
+    </div>
+
+    <footer class="footer"></footer>
+
+    <style type="text/js">
+
+      $('#datetimepicker').data("DateTimePicker").FUNCTION()
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
+  </body>
+</html>

@@ -16,12 +16,16 @@
     <script>
       $(document).ready(function () {
         $('#loginbtn').click(function () {
-          if ($('#logintext').val() == 'admin') {
+          var p = $('#inputPassword').val()
+          if ($('#logintext').val() == 'admin' && p == '123') {
             $('#a_href').attr({ href: 'AdminHome.html' });
-          } else if ($('#logintext').val() == 'student') {
+          } else if ($('#logintext').val() == 'student' && p == '123') {
             $('#a_href').attr({ href: 'StudentHome.html' });
-          } else if ($('#logintext').val() == 'peerally') {
+          } else if ($('#logintext').val() == 'peerally' && p == '123') {
             $('#a_href').attr({ href: 'PeerHome.html' });
+          }
+          else {
+            alert("The username/password might be incorrect.")
           }
         });
       });
